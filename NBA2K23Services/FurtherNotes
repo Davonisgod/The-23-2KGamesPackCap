@@ -1,0 +1,58 @@
+NBA2K23 Services
+
+These are all Services each within domain and addresses you will encounter will looking via packcaps
+
+nba2k23-svc.2ksports.com(uses the same address as nba2k23-ws.2ksports.com) --> port: 23191
+
+nba2k23-ws-telem.aws.2ksports.com  --> uses various A type addresses
+          ----lists-----
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 34.232.131.178
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 52.5.97.246
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 34.199.103.242
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 52.44.101.163
+
+MyPark
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 35.169.58.1
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 34.196.2.22
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 44.205.204.72
+nba2k23-telemetry-prod-elb-1982266445.us-east-1.elb.amazonaws.com: type A, class IN, addr 52.70.227.131
+
+
+
+
+w23.cf.2ksports.com --> port: 20204
+
+nba-cdn3.2ksports.com --> uses various A type addresses
+      ----lists-----
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.40
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.17
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.19
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.50
+
+Mypark
+a160.g2.akamai.net: type A, class IN, addr 23.200.3.12
+a160.g2.akamai.net: type A, class IN, addr 23.200.3.22
+a160.g2.akamai.net: type A, class IN, addr 23.200.3.8
+
+
+MyAntiUp
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.65
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.81
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.17
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.67
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.80
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.73
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.82
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.8
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.57
+
+3v3Event:
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.56
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.41
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.27
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.18
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.80
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.58
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.40
+a160.g2.akamai.net: type A, class IN, addr 104.117.182.10
+
