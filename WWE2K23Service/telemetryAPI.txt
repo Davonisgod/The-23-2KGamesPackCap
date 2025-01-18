@@ -1,0 +1,96 @@
+NSE: Loaded 157 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Initiating Ping Scan at 14:15
+Scanning telemetryk.api.2kcoretech.online (3.129.120.27) [4 ports]
+Completed Ping Scan at 14:15, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:15
+Completed Parallel DNS resolution of 1 host. at 14:15, 0.03s elapsed
+Initiating SYN Stealth Scan at 14:15
+Scanning telemetryk.api.2kcoretech.online (3.129.120.27) [1000 ports]
+Discovered open port 80/tcp on 3.129.120.27
+Discovered open port 443/tcp on 3.129.120.27
+Completed SYN Stealth Scan at 14:15, 4.18s elapsed (1000 total ports)
+Initiating Service scan at 14:15
+Scanning 2 services on telemetryk.api.2kcoretech.online (3.129.120.27)
+Completed Service scan at 14:15, 18.13s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against telemetryk.api.2kcoretech.online (3.129.120.27)
+Retrying OS detection (try #2) against telemetryk.api.2kcoretech.online (3.129.120.27)
+Initiating Traceroute at 14:15
+Completed Traceroute at 14:15, 3.05s elapsed
+Initiating Parallel DNS resolution of 6 hosts. at 14:15
+Completed Parallel DNS resolution of 6 hosts. at 14:15, 0.04s elapsed
+NSE: Script scanning 3.129.120.27.
+Initiating NSE at 14:15
+Completed NSE at 14:16, 5.13s elapsed
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.46s elapsed
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+
+Nmap scan report for telemetryk.api.2kcoretech.online (3.129.120.27)
+Host is up (0.043s latency).
+Other addresses for telemetryk.api.2kcoretech.online (not scanned): 52.15.145.126
+rDNS record for 3.129.120.27: ec2-3-129-120-27.us-east-2.compute.amazonaws.com
+Not shown: 998 filtered tcp ports (no-response)
+
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     AWS Elastic Load Balancing
+|_http-server-header: awselb/2.0
+|_http-title: Did not follow redirect to https://telemetryk.api.2kcoretech.online:443/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+443/tcp open  ssl/http nginx
+|_http-server-header: awselb/2.0
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=telemetryk.api.2kcoretech.online
+| Subject Alternative Name: DNS:telemetryk.api.2kcoretech.online
+| Issuer: commonName=Amazon RSA 2048 M03/organizationName=Amazon/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-07-16T00:00:00
+| Not valid after:  2025-08-15T23:59:59
+| MD5:   6eb2:d628:350c:d9a9:c4a7:0cd5:cbf9:5a75
+|_SHA-1: 0a1d:0319:2611:45f9:b370:f97b:5419:3228:1c16:eb9d
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: phone|general purpose
+Running (JUST GUESSING): Google Android 10.X (86%), Linux 4.X (85%)
+OS CPE: cpe:/o:google:android:10 cpe:/o:linux:linux_kernel:4.14
+Aggressive OS guesses: Android 10 (86%), Amazon Linux AMI 2018.03 (Linux 4.14) (85%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 33.012 days (since Mon Jul 15 13:58:33 2024)
+Network Distance: 15 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   1.00 ms  10.0.0.1
+2   26.00 ms syn-024-161-016-001.res.spectrum.com (24.161.16.1)
+3   ...
+4   27.00 ms lag-29.sctwny0101r.netops.charter.com (24.164.165.172)
+5   27.00 ms lag-64.nyquny9101r.netops.charter.com (24.164.164.254)
+6   27.00 ms lag-25.nycmny837aw-bcr00.netops.charter.com (107.14.19.22)
+7   29.00 ms lag-1.pr2.nyc20.netops.charter.com (66.109.9.5)
+8   ... 14
+15  40.00 ms ec2-3-129-120-27.us-east-2.compute.amazonaws.com (3.129.120.27)
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Initiating NSE at 14:16
+Completed NSE at 14:16, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 35.84 seconds
+           Raw packets sent: 2117 (98.024KB) | Rcvd: 78 (4.400KB)

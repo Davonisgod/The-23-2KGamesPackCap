@@ -1,0 +1,100 @@
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-08-17 14:06 Eastern Daylight Time
+NSE: Loaded 157 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.03s elapsed
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.00s elapsed
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.00s elapsed
+Initiating Ping Scan at 14:06
+Scanning portal.2k.com (23.40.179.55) [4 ports]
+Completed Ping Scan at 14:06, 0.16s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:06
+Completed Parallel DNS resolution of 1 host. at 14:06, 0.03s elapsed
+Initiating SYN Stealth Scan at 14:06
+Scanning portal.2k.com (23.40.179.55) [1000 ports]
+Discovered open port 443/tcp on 23.40.179.55
+Discovered open port 80/tcp on 23.40.179.55
+Completed SYN Stealth Scan at 14:06, 4.70s elapsed (1000 total ports)
+Initiating Service scan at 14:06
+Scanning 2 services on portal.2k.com (23.40.179.55)
+Completed Service scan at 14:06, 13.39s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against portal.2k.com (23.40.179.55)
+Initiating Traceroute at 14:06
+Completed Traceroute at 14:06, 3.04s elapsed
+Initiating Parallel DNS resolution of 8 hosts. at 14:06
+Completed Parallel DNS resolution of 8 hosts. at 14:06, 0.09s elapsed
+NSE: Script scanning 23.40.179.55.
+Initiating NSE at 14:06
+Completed NSE at 14:06, 5.19s elapsed
+Initiating NSE at 14:06
+Completed NSE at 14:06, 1.41s elapsed
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.00s elapsed
+Nmap scan report for portal.2k.com (23.40.179.55)
+Host is up (0.026s latency).
+Other addresses for portal.2k.com (not scanned): 23.40.179.45
+rDNS record for 23.40.179.55: a23-40-179-55.deploy.static.akamaitechnologies.com
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE  SERVICE  VERSION
+53/tcp  closed domain
+80/tcp  open   http     AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+|_http-title: Access Denied
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+443/tcp open   ssl/http AkamaiGHost (Akamai's HTTP Acceleration/Mirror service)
+| tls-alpn: 
+|   http/1.1
+|_  http/1.0
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   http/1.1
+|_  http/1.0
+| ssl-cert: Subject: commonName=portal.2k.com
+| Subject Alternative Name: DNS:accounts.2k.com, DNS:portal.2k.com
+| Issuer: commonName=R10/organizationName=Let's Encrypt/countryName=US
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2024-07-08T15:35:58
+| Not valid after:  2024-10-06T15:35:57
+| MD5:   f8ed:643d:ef56:ff8d:38a2:174c:e680:8f16
+|_SHA-1: bb3a:ecb0:d1d5:be64:c819:60ab:486a:9b8f:9976:f441
+|_http-title: Access Denied
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Device type: general purpose
+Running: Linux 5.X
+OS CPE: cpe:/o:linux:linux_kernel:5
+OS details: Linux 5.0 - 5.14
+Uptime guess: 45.306 days (since Wed Jul  3 06:45:50 2024)
+Network Distance: 13 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE (using port 53/tcp)
+HOP RTT       ADDRESS
+1   1.00 ms   www.routerlogin.com (10.0.0.1)
+2   36.00 ms  syn-024-161-016-001.res.spectrum.com (24.161.16.1)
+3   ...
+4   18.00 ms  lag-29.sctwny0101r.netops.charter.com (24.164.165.172)
+5   24.00 ms  lag-64.nyquny9101r.netops.charter.com (24.164.164.254)
+6   23.00 ms  lag-15.nycmny837aw-bcr00.netops.charter.com (66.109.6.76)
+7   21.00 ms  lag-20.nwrknjmd67w-bcr00.netops.charter.com (66.109.5.139)
+8   23.00 ms  lag-400.bpr03nwrknjmd.netops.charter.com (66.109.9.171)
+9   145.00 ms syn-024-027-224-091.inf.spectrum.com (24.27.224.91)
+10  ... 12
+13  20.00 ms  a23-40-179-55.deploy.static.akamaitechnologies.com (23.40.179.55)
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.00s elapsed
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.00s elapsed
+Initiating NSE at 14:06
+Completed NSE at 14:06, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.35 seconds
+           Raw packets sent: 2050 (91.034KB) | Rcvd: 358 (30.290KB)
